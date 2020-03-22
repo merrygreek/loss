@@ -1,0 +1,14 @@
+{% extends "appbuilder/base.html" %}
+
+{% block head_css %}
+    {{ super() }}
+    <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>  
+{% endblock %}
+
+{% block body %}
+    {{ super() }}
+  {{ myechart|safe }}
+
+{% endblock %}
+
+
